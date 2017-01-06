@@ -33,7 +33,7 @@ public class LoginDialog {
                         String customerId=customerIdText.getText().toString();
                         String uid=uidText.getText().toString();
                         SoftInputUtils.toggleSoftInput(context);
-                        if(customerId!=null||uid!=null){
+                        if(customerId==null||uid==null){
                             Toast.makeText(context,"gameId和uid不能为空",Toast.LENGTH_SHORT).show();
                         }else{
                             try {
